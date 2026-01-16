@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+    GUIDE RAPIDE - index.html
+
+    Objectif : page d'accueil / portfolio minimaliste pour un·e graphiste.
+
+    Contrat (qu'est-ce que ce fichier fait) :
+    - Entrées : aucun paramètre requis. Les images et contenus sont directement
+        intégrés dans le HTML ou référencés via des balises <img> / CSS.
+    - Sorties : structure DOM avec des sections nommées (IDs) que le CSS et JS
+        stylisent et animent.
+    - Erreurs attendues : si vous remplacez un placeholder par une image dont
+        le chemin est incorrect, l'image ne s'affichera pas ; vérifiez le chemin
+        et l'attribut `alt` pour l'accessibilité.
+
+    Où modifier :
+    - Texte (titres, descriptions) : dans ce fichier `index.html`.
+    - Apparence (couleurs, typographie, responsive) : dans `style.css`.
+    - Comportement interactif (animations, scroll, effets) : dans `script.js`.
+
+    Raccourcis pour débutants :
+    - Pour voir vos modifications rapidement, ouvrez un terminal dans le dossier
+        du projet et lancez :
+            python3 -m http.server 8000
+        puis allez sur http://localhost:8000
+
+    Bonnes pratiques :
+    - Toujours ajouter l'attribut `alt` sur les images (<img alt="...">).
+    - Testez vos changements sur mobile et bureau.
+    - Si vous supprimez une section, adaptez les liens de navigation correspondants.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphiste - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Graphiste</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Hero: L'art d'Immortaliser -->
+    <section id="hero" class="hero-section">
+        <h1 class="hero-title">L'art d'Immortaliser</h1>
+        <div class="hero-gallery">
+            <div class="hero-image-box"></div>
+            <div class="hero-image-box"></div>
+            <div class="hero-image-box"></div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">Portfolio</h2>
+        
+        <div class="portfolio-grid">
+            <!-- Mariage -->
+            <div class="portfolio-item">
+                <h3>Mariage</h3>
+                <p class="portfolio-description">Célébrons l'amour et Figer l'émotion</p>
+                <div class="portfolio-image"></div>
+            </div>
+
+            <!-- Sport -->
+            <div class="portfolio-item">
+                <h3>Sport</h3>
+                <p class="portfolio-description">Atrreter le temps pour admirer l'action</p>
+                <div class="portfolio-image"></div>
+            </div>
+
+            <!-- Portrait -->
+            <div class="portfolio-item">
+                <h3>Portrait</h3>
+                <p class="portfolio-description">Un shooting personnalisé</p>
+                <div class="portfolio-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact</h2>
+        
+        <div class="contact-content">
+            <!-- Email -->
+            <div class="contact-item">
+                <p class="contact-label">Par mail</p>
+                <a href="mailto:graphiste@icloud.com" class="contact-link">graphiste@icloud.com</a>
+            </div>
+
+            <!-- Photo centrale -->
+            <div class="contact-photo"></div>
+
+            <!-- Instagram -->
+            <div class="contact-item">
+                <p class="contact-label">Instagram</p>
+                <a href="https://instagram.com/Graphiste" target="_blank" class="contact-link instagram-link">@Graphiste</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Graphiste - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

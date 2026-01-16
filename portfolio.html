@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Graphiste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Graphiste</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#presentation">Présentation</a></li>
+            <li><a href="index.html#apropos">À propos</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête Portfolio -->
+    <section class="portfolio-header">
+        <h1 class="portfolio-main-title">Portfolio</h1>
+        <p class="portfolio-subtitle">Retrouvez ici l'exhaustivité de mes photos personnels et mes prestations</p>
+    </section>
+
+    <!-- Section Mariage -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">Mariage</h2>
+        
+        <div class="gallery-container">
+            <button class="gallery-nav gallery-nav-left" onclick="scrollGallery('mariage', -1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            
+            <div class="gallery-wrapper" id="mariage-gallery">
+                <div class="gallery-track">
+                    <div class="gallery-item" data-index="1"></div>
+                    <div class="gallery-item" data-index="2"></div>
+                    <div class="gallery-item" data-index="3"></div>
+                    <div class="gallery-item" data-index="4"></div>
+                    <div class="gallery-item" data-index="5"></div>
+                    <div class="gallery-item" data-index="6"></div>
+                </div>
+            </div>
+            
+            <button class="gallery-nav gallery-nav-right" onclick="scrollGallery('mariage', 1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Sport -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">Sport</h2>
+        
+        <div class="gallery-container">
+            <button class="gallery-nav gallery-nav-left" onclick="scrollGallery('sport', -1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            
+            <div class="gallery-wrapper" id="sport-gallery">
+                <div class="gallery-track">
+                    <div class="gallery-item" data-index="1" style="background-color: #e8d5c5"></div>
+                    <div class="gallery-item" data-index="2" style="background-color: #d4b69b"></div>
+                    <div class="gallery-item" data-index="3" style="background-color: #c19c7c"></div>
+                    <div class="gallery-item" data-index="4" style="background-color: #b88a5c"></div>
+                    <div class="gallery-item" data-index="5" style="background-color: #a67b4d"></div>
+                    <div class="gallery-item" data-index="6" style="background-color: #8f6a42"></div>
+                </div>
+            </div>
+            
+            <button class="gallery-nav gallery-nav-right" onclick="scrollGallery('sport', 1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Portrait -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">Portrait</h2>
+        
+        <div class="gallery-container">
+            <button class="gallery-nav gallery-nav-left" onclick="scrollGallery('portrait', -1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            
+            <div class="gallery-wrapper" id="portrait-gallery">
+                <div class="gallery-track">
+                    <div class="gallery-item" data-index="1" style="background-color: #d4a574"></div>
+                    <div class="gallery-item" data-index="2" style="background-color: #c99665"></div>
+                    <div class="gallery-item" data-index="3" style="background-color: #b88a5c"></div>
+                    <div class="gallery-item" data-index="4" style="background-color: #a67b4d"></div>
+                    <div class="gallery-item" data-index="5" style="background-color: #8f6a42"></div>
+                    <div class="gallery-item" data-index="6" style="background-color: #785839"></div>
+                </div>
+            </div>
+            
+            <button class="gallery-nav gallery-nav-right" onclick="scrollGallery('portrait', 1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Bas de page avec menu -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact</h2>
+        
+        <div class="contact-content">
+            <!-- Email -->
+            <div class="contact-item">
+                <p class="contact-label">Par mail</p>
+                <a href="mailto:graphiste@icloud.com" class="contact-link">graphiste@icloud.com</a>
+            </div>
+
+            <!-- Photo centrale -->
+            <div class="contact-photo"></div>
+
+            <!-- Instagram -->
+            <div class="contact-item">
+                <p class="contact-label">Instagram</p>
+                <a href="https://instagram.com/Graphiste" target="_blank" class="contact-link instagram-link">@Graphiste</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Graphiste - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
