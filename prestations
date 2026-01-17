@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestations - Photographie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Graphikito_</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="prestations.html">Prestations</a></li>
+        </ul>
+    </nav>
+
+    <header class="portfolio-header">
+        <h1 class="portfolio-main-title">Prestations</h1> <p class="portfolio-subtitle">
+            Chaque prestation est unique, un mariage ou un shooting portrait ne se déroule pas de la même façon et chaque mariage est unique.
+            <br><br>
+            Pour chaque prestation, vous verrez donc une tarification de base qui pourrait être modifiée selon les besoins.
+        </p>
+    </header>
+
+    <section class="portfolio-section">
+        <h2 class="section-title">Mariage</h2>
+        <div class="prestation-container">
+            <div class="prestation-item-row">
+                <span class="p-title">Couple</span>
+                <span class="p-desc">Shooting intime en costume</span>
+                <span class="p-price">250 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">Mairie</span>
+                <span class="p-desc">Solennel</span>
+                <span class="p-price">300 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">Soirée (4h)</span>
+                <span class="p-desc">Immortaliser, figer l'instant le plus beau</span>
+                <span class="p-price">500 €</span>
+            </div>
+            <div class="prestation-item-row highlighted">
+                <span class="p-title">Journée complète</span>
+                <span class="p-desc">L'ensemble des prestations précédentes</span>
+                <span class="p-price">1400 €</span>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-style: italic; color: #6a6a6a;">
+            Contactez moi pour plus d'information.
+        </p>
+    </section>
+
+    <section class="portfolio-section" style="background: rgba(212, 165, 116, 0.03);">
+        <h2 class="section-title">Sport</h2>
+        <div class="prestation-container">
+            <div class="prestation-item-row">
+                <span class="p-title">Match (2h)</span>
+                <span class="p-desc">Capture de l'action</span>
+                <span class="p-price">100 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">Évènement</span>
+                <span class="p-desc">Demi-journée</span>
+                <span class="p-price">300 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">Journée complète</span>
+                <span class="p-desc">Couverture intégrale</span>
+                <span class="p-price">800 €</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <h2 class="section-title">Portrait</h2>
+        <div class="prestation-container">
+            <div class="prestation-item-row">
+                <span class="p-title">3 photos</span>
+                <span class="p-desc">Séance courte</span>
+                <span class="p-price">10 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">5 photos</span>
+                <span class="p-desc">Séance classique</span>
+                <span class="p-price">20 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">10 photos</span>
+                <span class="p-desc">Séance complète</span>
+                <span class="p-price">30 €</span>
+            </div>
+            <div class="prestation-item-row">
+                <span class="p-title">+ de 10 photos</span>
+                <span class="p-desc">Tarif par unité supplémentaire</span>
+                <span class="p-price">3 €/photo</span>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-weight: bold; color: #d4a574;">
+            + 5 € / heures
+        </p>
+    </section>
+
+    <footer class="footer">
+        &copy; 2026 Photographie - Tous droits réservés
+    </footer>
+
+</body>
+</html>
